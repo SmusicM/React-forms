@@ -11,9 +11,9 @@ it("works with snapshot",function(){
     expect(asFragment()).toMatchSnapshot();
 })
 
-it("should add a new box with heigth and width",function(){
+it("should add a new todo with heigth and width",function(){
     const { queryByText, getByLabelText } = render(<TodoList />);
-    const taskInput = getByLabelText("color");
+    const taskInput = getByLabelText("task");
     
     const btn = queryByText("Add Todo");
     

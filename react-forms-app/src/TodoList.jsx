@@ -17,7 +17,7 @@ const TodoList = () => {
   const removeTodo = (todoId) =>{
     setTodos((todos)=>{
         return todos.reduce((acc,todo)=>{
-         //boxes box has property id, so we reduce it with box as the word for each box from boxes and we can get the id frpm each
+         
          if(todo.id !== todoId){
            acc.push(todo)
          }
